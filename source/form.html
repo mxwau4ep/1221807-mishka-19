@@ -5,14 +5,14 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-   <header class="page-header">
+    <header class="page-header">
      <a class="page-header__logo">
       <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Mishka">
-     </a>
-     <nav class="main-nav">
+      </a>
+      <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-       <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
@@ -25,8 +25,8 @@
         <li class="site-list__item">
           <a href="#">Распродажа</a>
         </li>
-       </ul>
-       <ul class="main-nav__list user-list">
+        </ul>
+        <ul class="main-nav__list user-list">
         <li class="user-list__item">
           <a class="user-list__search" href="#">Поиск</a>
         </li>
@@ -36,18 +36,18 @@
         <li class="user-list__item">
           <span class="user-list__delivery">Бесплатная доставка по России</span>
         </li>
-       </ul>
+        </ul>
       </div>
-     </nav>
+      </nav>
     </header>
     <main class="page-form">
       <section class="page-form__order order">
         <h2 class="order__intro">Вязание на заказ</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order__form" method="get" action="https://echo.htmlacademy.ru">
-         <fieldset class="order-type">
+        <form class="order__form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="order-type">
           <legend class="order-type__legend legend">Тип</legend>
-           <ul class="order-type__list">
+            <ul class="order-type__list">
             <li class="order-type__item">
               <input class="order-type__filter-interior" type="radio" name="type" value="interior" id="filter-interior" checked>
               <label for="filter-interior">Аксессуар для интерьера</label>
@@ -56,38 +56,38 @@
               <input class="order-type__filter-toy" type="radio" name="type" value="toy" id="filter-toy">
               <label>Детская игрушка</label>
             </li>
-           </ul>
-         </fieldset>
-         <fieldset class="order-color">
+            </ul>
+          </fieldset>
+          <fieldset class="order-color">
           <legend class="order-color__legend legend">Цвет</legend>
-           <ul class="order-color__list">
+            <ul class="order-color__list">
             <li class="order-color__item">
-              <input class="order-color__filter-white" type="checkbox" name="color" value="" id="filter-white" checked>
+              <input class="order-color__filter-white" type="checkbox" name="color" value="white" id="filter-white" checked>
               <label class="order-color__label" for="filter-white">Белый</label>
             </li>
             <li class="order-color__item">
-              <input class="order-color__filter-grey" type="checkbox" name="color" value="" id="filter-grey" checked>
+              <input class="order-color__filter-grey" type="checkbox" name="color" value="grey" id="filter-grey" checked>
               <label class="order-color__label" for="filter-grey">Серый</label>
             </li>
             <li class="order-color__item">
-              <input class="order-color__filter-tiffany" type="checkbox" name="color" value="" id="filter-tiffany">
+              <input class="order-color__filter-tiffany" type="checkbox" name="color" value="tiffany" id="filter-tiffany">
               <label class="order-color__label" for="filter-tiffany">"Тиффани"</label>
             </li>
             <li class="order-color__item">
-              <input class="order-color__filter-black" type="checkbox" name="color" value="" id="filter-black">
+              <input class="order-color__filter-black" type="checkbox" name="color" value="black" id="filter-black">
               <label class="order-color__label" for="filter-black">Черный</label>
             </li>
             <li class="order-color__item">
-              <input class="order-color__filter-pink" type="checkbox" name="color" value="" id="filter-pink">
+              <input class="order-color__filter-pink" type="checkbox" name="color" value="pink" id="filter-pink">
               <label class="order-color__label" for="filter-pink">Розовый</label>
             </li>
             <li class="order-color__item">
-              <input class="order-color__filter-orange" type="checkbox" name="color" value="" id="filter-orange">
+              <input class="order-color__filter-orange" type="checkbox" name="color" value="orange" id="filter-orange">
               <label class="order-color__label" for="filter-orange">Оранжевый</label>
             </li>
-           </ul>
-         </fieldset>
-         <fieldset class="order-name">
+            </ul>
+          </fieldset>
+          <fieldset class="order-name">
           <legend class="order-name__legend legend">ФИО</legend>
           <ul class="order-name__list">
             <li class="order-name__item">
@@ -103,23 +103,23 @@
               <input class="order-name__middlename" type="text" name="surname" value="" id="order-name__middlename" placeholder="Отчество, если желаете">
             </li>
           </ul>
-         </fieldset>
-         <fieldset class="order-telefon">
+          </fieldset>
+          <fieldset class="order-telefon">
           <legend class="order-telefon__legend legend">ТЕЛ</legend>
           <input class="order-telefon__number" type="tel" name="telefon" placeholder="+7 XXX XX XX*" required>
-         </fieldset>
-         <fieldset class="order-email">
-           <legend class="order-email__legend legend">E-MAIL</legend>
-           <input class="order-email__email" type="email" name="email" placeholder="Ваш Email*" required>
-         </fieldset>
-         <fieldset class="order-add">
-           <legend class="order-add__legend legend">ДОП</legend>
-           <textarea class="order-add__comment" rows="" cols="" name="comment" placeholder="">Опишите все ваши пожеланию к заказу</textarea>
-         </fieldset>
-         <small class="order__legend">
-           <sup>*</sup>Поля обязательны для заполнения
-         </small>
-         <a class="order__send-order" type="button" href="https://echo.htmlacademy.ru">Отправить заказ</a>
+          </fieldset>
+          <fieldset class="order-email">
+            <legend class="order-email__legend legend">E-MAIL</legend>
+            <input class="order-email__email" type="email" name="email" placeholder="Ваш Email*" required>
+          </fieldset>
+          <fieldset class="order-add">
+            <legend class="order-add__legend legend">ДОП</legend>
+            <textarea class="order-add__comment" rows="" cols="" name="comment" placeholder="">Опишите все ваши пожеланию к заказу</textarea>
+          </fieldset>
+          <small class="order__legend">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <input class="order__send-order" type="submit" value="Отправить заказ">
         </form>
 
 
@@ -127,10 +127,10 @@
 
     </main>
     <footer class="page-footer">
-     <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper">
       <a class="page-footer__logo">
       <img class="page-footer__logo-image" src="https://via.placeholder.com/50x50" alt="Логотип Mishka">
-     </a>
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -148,7 +148,7 @@
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
       </div>
-     </div>
+      </div>
 
     </footer>
 
