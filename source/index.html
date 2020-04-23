@@ -3,14 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Mishka">
-      </a>
+      <div class="page-header__logo-toggle">
+        <div class="page-header__logo">
+        <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka">
+        </a>
+        </div>
+        <div class="main-nav__toggle">
+        <button class="main-nav__toggle-button" type="button">Меню</button>
+        </div>
+      </div>
       <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -20,18 +28,18 @@
           <a href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Новые поступления</a>
+          <a class="user-list__search" href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Распродажа</a>
+          <a class="user-list__basket" href="#">Корзина:пока пуста</a>
         </li>
         </ul>
         <ul class="main-nav__list user-list">
         <li class="user-list__item">
-          <a class="user-list__search" href="#">Поиск</a>
+          <a href="#">Новые поступления</a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__basket" href="#">Корзина:пока пуста</a>
+          <a href="#">Распродажа</a>
         </li>
         <li class="user-list__item">
           <span class="user-list__delivery">Бесплатная доставка по России</span>
@@ -42,6 +50,9 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Mishka - Милые штуки ручной работы для дома</h1>
+      <div class="page-main__image">
+        <p class="page-main__intro">Милые штуки ручной работы для дома</p>
+      </div>
       <section class="goods">
         <h2 class="visually-hidden">Ассортимент товаров</h2>
         <div class="goods__interior">
@@ -49,13 +60,13 @@
         </div>
         <div class="goods__soft-toys">
           <a href="#">Мягкие игрушки</a>
-        </div>
       </section>
+      </div>
       <section class="product-week">
         <header class="product-week__header">
           <h2 class="visually-hidden">Товар недели</h2>
+          <p class="product-week__intro">Вязаные корзинки</p>
           <b class="product-week__badge">Товар недели</b>
-          <p class="product-week__intro">Вязаные шапочки</p>
           <p class="product-week__description">Экологически чистая пряжа,ручная работа. Доступны в шести цветах, и трех размерах.</p>
         </header>
         <table class="product-week__list">
@@ -73,10 +84,10 @@
           </tr>
         </table>
         <div class="product-week__picture">
-          <img class="product-week__image" src="https://via.placeholder.com/300x300">
-          <p class="product-week__price">Цена:990 руб.</p>
+          <img class="product-week__image" src="img/triple-set-mobile@1x.jpg">
+          <p class="product-week__price">Цена: 990 руб.</p>
         </div>
-        <a class="product-week__button" href="#">Заказать</a>
+        <a class="product-week__button button" href="#">Заказать</a>
       </section>
 
       <section class="about">
@@ -109,7 +120,6 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
-        <a class="reviews__write button" href="#">Написать</a>
           <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -117,10 +127,11 @@
             <p class="reviews__login">@misssssiskras</p>
           </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle" type="button"><--</button>
           <button class="slider__toggle" type="button">--></button>
-          </p>
+          </div>
+        <a class="reviews__write button" href="#">Написать</a>
         </div>
       </section>
       <section class="page-main__contacts contacts">
@@ -133,12 +144,14 @@
             </td>
           </tr>
           <tr>
-            <td class="contacts__field">Адрес:</td>
+            <td class="contacts__field">адрес:</td>
             <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная,д. 29/8,офис 101</td>
           </tr>
         </table>
-        <img class="contacts__map" src="https://via.placeholder.com/300x300" alt="Карта">
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Карта">
+          <div class="contacts__write">
         <a class="contacts__write button" href="#">Напишите нам</a>
+          </div>
 
 
       </section>
@@ -148,7 +161,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/50x50" alt="Логотип Mishka">
+      <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип Mishka">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -164,8 +177,10 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="page-header__logo-image" src="img/logo-htmlacademy.svg" alt="Логотип Mishka">
+        </a>
       </div>
       </div>
 
