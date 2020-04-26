@@ -8,15 +8,11 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo-toggle">
-        <div class="page-header__logo">
-        <a class="page-header__logo-link">
+      <div class="page-header__logo">
+        <a href="index.html" class="page-header__logo-link">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka">
         </a>
-        </div>
-        <div class="main-nav__toggle">
-        <button class="main-nav__toggle-button" type="button">Меню</button>
-        </div>
+        <button class="main-nav__button" type="button">Меню</button>
       </div>
       <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -25,7 +21,7 @@
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Вязание на заказ</a>
+          <a href="#">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a class="user-list__search" href="#">Поиск по сайту</a>
@@ -49,8 +45,10 @@
       </nav>
     </header>
     <main class="page-form">
-      <section class="page-form__order order">
+      <div class="order__intro-wrapper">
         <h2 class="order__intro">Вязание на заказ</h2>
+      </div>
+      <section class="page-form__order order">
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form" method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="order-type">
@@ -122,17 +120,14 @@
           </fieldset>
           <fieldset class="order-add">
             <legend class="order-add__legend legend">ДОП</legend>
-            <textarea class="order-add__comment" rows="" cols="" name="comment" placeholder="">Опишите все ваши пожеланию к заказу</textarea>
+            <textarea class="order-add__comment" rows="" cols="" name="comment" placeholder="Опишите все ваши пожеланию к заказу"></textarea>
           </fieldset>
           <small class="order__legend">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
           <input class="order__send-order" type="submit" value="Отправить заказ">
         </form>
-
-
       </section>
-
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
