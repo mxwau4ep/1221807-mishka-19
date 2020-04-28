@@ -27,3 +27,79 @@
 @import "blocks/order-telefon/order-telefon.less";
 @import "blocks/order-email/order-email.less";
 @import "blocks/order-add/order-add.less";
+@import "base/variables.less";
+
+
+
+@media (min-width: @tablet-width) {
+
+  .main-nav__button {
+    display: none;
+  }
+
+  .page-header {
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+    display: flex;
+    min-width: 300px;
+
+  }
+
+  .page-header__logo {
+    display: block;
+    margin: 0;
+    height: 90px;
+    width: 368px;
+    border: 1px solid;
+
+  }
+
+  .page-header__logo-link {
+    margin: 0;
+  }
+
+  .page-header__logo-image {
+  display: block;
+  margin: 0;
+  margin-right: auto;
+}
+
+  .main-nav {
+    border: 1px solid;
+  }
+
+  .user-list {
+  display: block;
+  border: 1px solid;
+  margin-bottom: 0;
+  }
+
+  .site-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 90px;
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+.site-list__item {
+  padding: 0;
+  margin: 0;
+  border: 1px solid;
+  height: 90px;
+  min-width: 250px;
+}
+
+.site-list__item a {
+  color: black;
+  border: 1px solid;
+}
+
+}
+
